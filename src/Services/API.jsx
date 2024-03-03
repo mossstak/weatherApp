@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API_KEY = process.env.REACT_APP_OPENWEATHER_API_KEY;
+const API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY;
 const base = 'https://api.openweathermap.org/data/2.5/';
 
 export const API = async (city) => {
@@ -17,4 +17,6 @@ export const API = async (city) => {
         //Handle Error Here
         console.error('Error Fetching weather data:', error);
     }
+
+    console.log(process.env.REACT_APP_OPENWEATHER_API_KEY)
 };

@@ -3,7 +3,7 @@ import axios from 'axios'
 const API_KEY = import.meta.env.VITE_OPENWEATHER_API_KEY;
 const baseURL = 'https://api.openweathermap.org/data/2.5/';
 
-export const fetchWeatherData = async (city) => {
+export const API = async (city) => {
     try {
         const response = await axios.get(`${baseURL}weather`, {
             params: {

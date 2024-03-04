@@ -31,7 +31,7 @@ const App = () => {
   return (
     <div className="h-screen w-screen grid grid-cols-1 place-self-center content-center bg-gray-200">
       <div className="flex justify-center ">
-        <h1 className="text-[48pt] m-3 font-bold">Weather App</h1>
+        <h1 className="text-[34pt] md:text-[48pt] m-3 font-bold">Weather App</h1>
       </div>
       <div className="flex items-center justify-center gap-3">
         <WeatherInput input={city} onChange={(e) => setCity(e.target.value)} />
